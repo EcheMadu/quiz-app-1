@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="quizContainer">
+        <div class="questionNumber">
+            <h3>Question <span class="questionNumValue"></span> of <span class="totalQuestion"></span></h3>
+        </div>
+        <div class="question">
+        </div>
+        <div class="options">
+            <div id="0" class="option1" onclick="check(this)"></div>
+            <div id="1" class="option2" onclick="check(this)"></div>
+            <div id="2" class="option3" onclick="check(this)"></div>
+        </div>
+        <div class="button">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+        <div class="answersTracker">
+
+        </div>
+    </div>
+    <div class="quizOver">
+        <div class="box">
+            <h1>
+                Splendid Effort! <br>
+                You got <span class="correctAnswers"></span> correct out of <span class="totalAnswered"></span>! <br>
+            </h1>
+            <button type="button" onclick="tryAgain()">Restart</button>
+         </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
